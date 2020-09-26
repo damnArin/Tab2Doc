@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
  
-  "name": "Python Chrome Plugin",
-  "description": "This extension runs Python code.",
+  "name": "tab2doc",
+  "description": "This extension copies current tab(s) and puts them in a google doc.",
   "version": "1.0",
  
   // "browser_action": {
@@ -14,13 +14,13 @@
 
 "browser_action": {
    "default_icon": {
-       "128": "icon128.png"
+       "128": "icon.png"
        },
    "default_title": "icon"
 },
 "icons": {
-   "128": "icon128.png",
-   "32": "icon_ju.ico"
+   "128": "icon.png",
+   "32": "icon.png"
 },
 "background": {
     "persistent": true,
@@ -33,6 +33,7 @@
 
   "permissions": [
     "activeTab",
+    "tabs",
     "https://ajax.googleapis.com/"
   ]
 }
